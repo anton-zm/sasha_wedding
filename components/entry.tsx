@@ -38,15 +38,15 @@ const Members = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 20px;
 
     & p {
-        font-size: 80px;
+        font-size: 40px;
         color: #222;
     }
     & span {
         display: block;
-        font-size: 60px;
+        font-size: 30px;
         color: #222;
     }
 `
@@ -58,7 +58,7 @@ const Date = styled.div`
 
     & .number {
         color: #222;
-        font-size: 100px;
+        font-size: 60px;
     }
     & .divider {
         width: 8px;
@@ -84,7 +84,7 @@ const Wrapper = styled.section`
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 280px;
+        height: 120px;
         background: linear-gradient(
             to bottom,
             rgba(250, 250, 250, 0),
@@ -96,7 +96,7 @@ const Wrapper = styled.section`
         top: 0;
         left: 0;
         width: 100%;
-        height: 280px;
+        height: 120px;
         background: linear-gradient(
             to bottom,
             #808080,

@@ -1,4 +1,5 @@
 import { Entry } from "@/components/entry";
+import { Poster } from "@/components/poster";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <div>
         <main>
           <Entry />
+          <Poster />
         </main>
       </div>
     </>
