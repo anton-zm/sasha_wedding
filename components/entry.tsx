@@ -22,8 +22,7 @@ export const Entry = () => {
                 <Text>Мы будем рады разделить с Вами этот важный для нас день!</Text>
                 </div>
             </Content>
-        <div className="curtain" />
-        <div className="curtain_b" />
+        
     </Wrapper>
   )
 }
@@ -33,6 +32,11 @@ const Text = styled.p`
     margin-top: 40px;
     max-width: 500px;
     text-align: center;
+
+    @media (max-width: 1023px) {
+    font-size: 26px;
+    margin-top: 20px;
+    }
 `
 const Members = styled.div`
     display: flex;
@@ -41,8 +45,12 @@ const Members = styled.div`
     margin-top: 20px;
 
     & p {
-        font-size: 40px;
+        font-size: 72px;
         color: #222;
+
+        @media (max-width: 1023px) {
+        font-size: 66px;
+        }
     }
     & span {
         display: block;
@@ -54,17 +62,25 @@ const Date = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 
     & .number {
         color: #222;
-        font-size: 60px;
+        font-size: 112px;
+
+        @media (max-width: 1023px) {
+            font-size: 62px;
+        }
     }
     & .divider {
         width: 8px;
         height: 8px;
         border-radius: 50%;
         background-color: #222;
+
+        @media (max-width: 1023px) {
+            width: 5px;
+            height: 5px;
+        }
     }
 `
 const Content = styled.div`
@@ -72,35 +88,8 @@ const Content = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-    
 `
 const Wrapper = styled.section`
     height: 100vh;
     position: relative;
-
-    & .curtain_b {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        background: linear-gradient(
-            to bottom,
-            rgba(250, 250, 250, 0),
-            #808080
-        );
-    }
-    & .curtain {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 120px;
-        background: linear-gradient(
-            to bottom,
-            #808080,
-            rgba(250, 250, 250, 0)
-        );
-    }
 `
