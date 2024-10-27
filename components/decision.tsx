@@ -76,6 +76,9 @@ export const YourDecision = () => {
 const FormWrapper = styled.div`
     width: 300px;
     margin: 0 auto;
+    @media (max-width: 1023px) {
+    width: 100%;
+    }
 `
 const SubmitButton = styled.button`
 color: white;
