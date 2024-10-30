@@ -32,7 +32,7 @@ export default function Home() {
           {state ? (
           <List>
             {guests_list.map(e => (
-              <p key={e.id}>{e.inner_name} - {`https://wedding-sasha-alina.netlify.app/${e.slug}`}</p>
+              <p key={e.id}>{e.inner_name} - <a href={`https://wedding-sasha-alina.netlify.app/${e.slug}`}>{`https://wedding-sasha-alina.netlify.app/${e.slug}`}</a></p>
             ))}
           </List>) : <input value={password} onChange={(e) => {setPassword(e.target.value)}} type="text" placeholder="Пароль"/>}
         </Main>
@@ -50,6 +50,11 @@ font-size: 22px;
 font-family: Arial, Helvetica, sans-serif;
 padding: 60px;
 text-align: center;
+
+& a {
+  color: #c77474;
+  text-decoration: underline;
+}
 `
 
 const Main = styled.main`
