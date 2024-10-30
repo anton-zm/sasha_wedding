@@ -42,10 +42,11 @@ const Members = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 
     & p {
         font-size: 72px;
+        line-height: 1;
         color: #222;
 
         @media (max-width: 1023px) {
@@ -65,7 +66,7 @@ const Date = styled.div`
 
     & .number {
         color: #222;
-        font-size: 112px;
+        font-size: 82px;
 
         @media (max-width: 1023px) {
             font-size: 62px;
@@ -87,9 +88,9 @@ const Content = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 `
 const Wrapper = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 `

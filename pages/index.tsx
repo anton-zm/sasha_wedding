@@ -9,8 +9,13 @@ export default function Home() {
   const [state, setState] = useState(false)
 
   useEffect(() => {
+    const auth = localStorage.getItem('auth')
+    if(auth) {
+      setState(true)
+    }
     if(password === '250125'){
       setState(true)
+      localStorage.setItem('auth', 'true')
     }
   },[password])
 
