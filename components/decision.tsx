@@ -4,9 +4,13 @@ import { ContentWrapper, SectionTitle } from './layouts'
 import { useState } from 'react'
 import { FormControl, FormControlLabel, Radio, Checkbox, RadioGroup, FormGroup } from '@mui/material'
 
-export const YourDecision = () => {
+interface IProps {
+user: any
+}
+export const YourDecision = ({user}: IProps) => {
     const [selectedOption, setSelectedOption] = useState('');
     const [drinks, setDrinks] = useState<any[]>([])
+
 
     const handleChange = (event: any) => {
         setSelectedOption(event.target.value);
@@ -22,7 +26,7 @@ export const YourDecision = () => {
 
     const submit = async () => {
         const d = drinks.join(', ')
-        const name = 'Какой-то гость'
+        const name = user.inner_name
         fetch(`https://api.stvorka34.ru/sasha?name=${name}&decision=${selectedOption}&drinks=${d}`)
     }
     

@@ -7,8 +7,22 @@ import styled from "styled-components";
 import { HowGet } from "@/components/how-get";
 import { DressCode } from "@/components/dress-code";
 import { YourDecision } from "@/components/decision";
+import { useRouter } from "next/router";
+import { guests_list } from "@/guests";
+import { useEffect, useState } from "react";
 
 export default function Visit() {
+    const router = useRouter()
+    const {visit} = router.query
+    const [state, setState] = useState<any>()
+
+    useEffect(() => {
+        const user = guests_list.find(e => e.slug === visit)
+        if(user){
+            setState(user)
+        }
+    },[visit])
+
   return (
     <>
       <Head>
@@ -19,13 +33,18 @@ export default function Visit() {
       </Head>
       <div>
         <Main>
-          <Entry />
-          <Poster />
-          <Programm />
-          <Resto />
-          <HowGet />
-          <DressCode />
-          <YourDecision />
+          {state ? (
+            <>
+            <Entry />
+            <Poster />
+            <Programm />
+            <Resto />
+            <HowGet />
+            <DressCode />
+            <YourDecision user={state} /></>
+          ) : (
+            <></>
+          )}
           <div className="curtain" />
           <div className="curtain_b" />
         </Main>

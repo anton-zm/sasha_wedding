@@ -1,14 +1,19 @@
-import { Entry } from "@/components/entry";
-import { Resto } from "@/components/resto";
-import { Poster } from "@/components/poster";
-import { Programm } from "@/components/programm";
+
 import Head from "next/head";
 import styled from "styled-components";
-import { HowGet } from "@/components/how-get";
-import { DressCode } from "@/components/dress-code";
-import { YourDecision } from "@/components/decision";
+import { useEffect, useState } from "react";
+import { guests_list } from "@/guests";
 
 export default function Home() {
+  const [password, setPassword] = useState('')
+  const [state, setState] = useState(false)
+
+  useEffect(() => {
+    if(password === '250125'){
+      setState(true)
+    }
+  },[password])
+
   return (
     <>
       <Head>
@@ -19,14 +24,43 @@ export default function Home() {
       </Head>
       <div>
         <Main>
-          
+          {state ? (
+          <List>
+            {guests_list.map(e => (
+              <p key={e.id}>{e.inner_name} - {`https://wedding-sasha-alina.netlify.app/${e.slug}`}</p>
+            ))}
+          </List>) : <input value={password} onChange={(e) => {setPassword(e.target.value)}} type="text" placeholder="Пароль"/>}
         </Main>
       </div>
     </>
   );
 }
 
+const List = styled.div`
+display: flex;
+flex-direction: column;
+gap: 40px;
+width: 70vw;
+font-size: 22px;
+font-family: Arial, Helvetica, sans-serif;
+padding: 60px;
+text-align: center;
+`
+
 const Main = styled.main`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+min-height: 100vh;
+
+& input {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 300px;
+}
+
 & .curtain_b {
         position: fixed;
         bottom: 0;
