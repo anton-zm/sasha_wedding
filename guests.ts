@@ -1,7 +1,7 @@
 export const guests_list = [
     {
         "id": 1,
-        "call_name": "Алексей, Татьянв",
+        "call_name": "Алексей, Татьяна",
         "inner_name": "Вагины",
         "slug": "pZtVqUuNcX"
     },
@@ -26,25 +26,25 @@ export const guests_list = [
     {
         "id": 5,
         "call_name": "Маргарита",
-        "inner_name": "Блинова",
+        "inner_name": "Блинова сестра",
         "slug": "nMrBqFhStG"
     },
     {
         "id": 6,
         "call_name": "Сергей, Ирина, Павел",
-        "inner_name": "-",
+        "inner_name": " Серёгины",
         "slug": "iKlMnOoPqR"
     },
     {
         "id": 7,
         "call_name": "Александр",
-        "inner_name": "Катюхин",
+        "inner_name": "Катюхин Каша",
         "slug": "sTuVwXyZaB"
     },
     {
         "id": 8,
         "call_name": "Елена, Владимир",
-        "inner_name": "-",
+        "inner_name": "Квакины",
         "slug": "cDeFgHiJk"
     },
     {
@@ -56,7 +56,7 @@ export const guests_list = [
     {
         "id": 10,
         "call_name": "Евгений, Амина",
-        "inner_name": "-",
+        "inner_name": "Леухины дети",
         "slug": "tUvWxYzAbC"
     },
     {
@@ -68,7 +68,7 @@ export const guests_list = [
     {
         "id": 12,
         "call_name": "Алексей, Мария, Артём, Андрей",
-        "inner_name": "Шакуловы",
+        "inner_name": "Шакуловы1",
         "slug": "mNoPqRsTu"
     },
     {
@@ -86,7 +86,7 @@ export const guests_list = [
     {
         "id": 15,
         "call_name": "Иван, Надежда",
-        "inner_name": "-",
+        "inner_name": "Бебровичи",
         "slug": "nOpQrStUv"
     },
     {
@@ -122,7 +122,7 @@ export const guests_list = [
     {
         "id": 21,
         "call_name": "Леонид, Ева",
-        "inner_name": "-",
+        "inner_name": "Тарасовы",
         "slug": "pQrStUvWx"
     },
     {
