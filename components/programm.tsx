@@ -18,7 +18,7 @@ export const Programm = () => {
                         </div>
                     </SlotHeading>
                     <SlotContent>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum iste </p>
+                        <p>Подарите нам свою улыбку и возьмите с собой хорошее настроение</p>
                     </SlotContent>
                 </ProgrammSlot>
                 <ProgrammSlot>
@@ -30,7 +30,7 @@ export const Programm = () => {
                         </div>
                     </SlotHeading>
                     <SlotContent>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum iste </p>
+                        <p>Самое время для торжественного ужина</p>
                     </SlotContent>
                 </ProgrammSlot>
                 <ProgrammSlot>
@@ -42,7 +42,7 @@ export const Programm = () => {
                         </div>
                     </SlotHeading>
                     <SlotContent>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum iste </p>
+                        <p>Спасибо, что были <br />с нами</p>
                     </SlotContent>
                 </ProgrammSlot>
             </Timeline>

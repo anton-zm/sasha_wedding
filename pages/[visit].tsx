@@ -8,7 +8,7 @@ import { HowGet } from "@/components/how-get";
 import { DressCode } from "@/components/dress-code";
 import { YourDecision } from "@/components/decision";
 
-export default function Home() {
+export default function Visit() {
   return (
     <>
       <Head>
@@ -19,7 +19,15 @@ export default function Home() {
       </Head>
       <div>
         <Main>
-          
+          <Entry />
+          <Poster />
+          <Programm />
+          <Resto />
+          <HowGet />
+          <DressCode />
+          <YourDecision />
+          <div className="curtain" />
+          <div className="curtain_b" />
         </Main>
       </div>
     </>

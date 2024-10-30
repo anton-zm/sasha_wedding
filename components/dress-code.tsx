@@ -13,7 +13,7 @@ export const DressCode = () => {
     <Wrapper>
         <ContentWrapper>
             <SectionTitle>Дресс-код</SectionTitle>
-            <p className="intro">нам будет приятно, если вы поддержите цветовую гамму нашего праздника</p>
+            <p className="intro">Нам будет приятно, если вы поддержите цветовую гамму нашего праздника</p>
             <Colors>
                 {colors.map((e,i) => (
                     <div style={{backgroundColor: e}} key={i} className="dress-color" />
