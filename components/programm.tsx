@@ -11,7 +11,9 @@ export const Programm = () => {
             <Date>Суббота, 25 января 2025</Date>
                 <ProgrammSlot>
                     <SlotHeading>
-                        <img src="/shit1.jpg" alt="" />
+                        <div className="icon">
+                            <img src="/shit1.jpg" alt="" />
+                        </div>
                         <div className="flex-col between">
                             <p>14:30</p>
                             <p>Cбор гостей</p>
@@ -23,7 +25,10 @@ export const Programm = () => {
                 </ProgrammSlot>
                 <ProgrammSlot>
                     <SlotHeading>
-                        <img src="/shit1.jpg" alt="" />
+                    <div className="icon">
+                    <img src="/banket.jpg" alt="" />
+                        </div>
+                        
                         <div className="flex-col between">
                             <p>15:00</p>
                             <p>Банкет</p>
@@ -35,7 +40,9 @@ export const Programm = () => {
                 </ProgrammSlot>
                 <ProgrammSlot>
                     <SlotHeading>
-                        <img src="/shit1.jpg" alt="" />
+                        <div className="icon">
+                            <img src="/end.jpg" alt="" />
+                        </div>
                         <div className="flex-col between">
                             <p>23:00</p>
                             <p>Завершение торжества</p>
@@ -74,11 +81,21 @@ const SlotHeading = styled.div`
         white-space: nowrap;
     }
 
-    & img {
+    & .icon {
         width: 50px;
         height: 50px;
-        object-fit: contain;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            max-width: 100%;
+            object-fit: contain;
+        }
     }
+
+    
 `
 const Wrapper = styled.section`
  

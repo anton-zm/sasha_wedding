@@ -6,7 +6,7 @@ export const Poster = () => {
   return (
     <Wrapper>
         <ContentWrapper>
-          <img src="/poster.webp" alt="" />
+          <img src="/poster1.jpg" alt="" />
         </ContentWrapper>
     </Wrapper>
   )
@@ -20,7 +20,7 @@ const Wrapper = styled.section`
 
     & img {
         max-width: 100%;
-        max-height: 70vh;
+        max-height: 90vh;
         object-fit: cover;
         border-radius: 30px;
     }

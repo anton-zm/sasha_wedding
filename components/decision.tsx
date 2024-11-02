@@ -34,7 +34,8 @@ export const YourDecision = ({user}: IProps) => {
     <Wrapper>
         <ContentWrapper>
             <SectionTitle>Ваше присутствие</SectionTitle>
-            <p className="intro">будем очень рады видеть Вас. просим подтвердить своë присутствте на торжественном до 01.12.2024</p>
+            <p className='user'>{user.call_name}</p>
+            <p className="intro">Будем очень рады видеть Вас. Просим подтвердить своë присутствие до 01.12.2024</p>
             <FormWrapper>
             <Form>
                 <p className='title'>Сможете ли вы присутствовать?</p>
@@ -70,7 +71,6 @@ export const YourDecision = ({user}: IProps) => {
                 Отправить
             </SubmitButton>
             <div className="divider" />
-            <p className='bye'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga rem, fugit unde rerum quidem eveniet dolor quasi consequatur blanditiis dolorem in nostrum magni aut similique sint? Omnis, distinctio rem.</p>
             <p className="byebye">До встречи</p>
             </FormWrapper>
         </ContentWrapper>
@@ -106,6 +106,17 @@ margin-top: 60px;
 `
 const Wrapper = styled.section`
  margin: 100px 0;
+ & .user {
+    font-size: 32px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #222;
+    width: fit-content;
+    margin: 40px auto;
+
+    @media (max-width: 1023px) {
+    font-size: 26px;
+    }
+ }
 & .bye {
     text-align: center;
     width: 80%;

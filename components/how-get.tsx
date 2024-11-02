@@ -4,12 +4,11 @@ import { ContentWrapper, SectionTitle } from './layouts'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 export const HowGet = () => {
-    const point = [48.724217, 44.503455]
+    const point = [48.723970, 44.503118]
   return (
     <Wrapper>
         <ContentWrapper>
             <SectionTitle>Как добраться</SectionTitle>
-            <p className="intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus qui corrupti, quis ullam quas minus, officia tempore aperiam, quo totam possimus! Optio accusamus natus maiores, voluptatum libero qui ad nesciunt!</p>
             <MapWrapper>
             <YMaps>
                     <Map

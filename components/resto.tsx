@@ -8,7 +8,7 @@ export const Resto = () => {
         <ContentWrapper>
             <SectionTitle>Локация</SectionTitle>
             <p className="intro">Ресторан "Nairi" адрес: г. Волгоград, Берёзовская 2</p>
-            <img src="/test1.jpg" alt="" />
+            <img src="/resto.png" alt="" />
         </ContentWrapper>
     </Wrapper>
   )
