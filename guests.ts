@@ -130,5 +130,17 @@ export const guests_list = [
         "call_name": "Андрей",
         "inner_name": "Сенин",
         "slug": "yZaBcDefG"
-    }
+    },
+    {
+    "id": 23,
+        "call_name": "Наталья, Олег",
+       "inner_name": "Пастуховы",
+       "slug": "fZaBwDafG"
+        },
+        {
+            "id": 24,
+         "call_name": "Вадим",
+            "inner_name": "Золин",
+            "slug": "sdhfkUiUeRTR"
+           }
 ];
