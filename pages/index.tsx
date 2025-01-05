@@ -3,21 +3,15 @@ import Head from "next/head";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { guests_list } from "@/guests";
+import { YourDecision } from "@/components/decision";
+import { DressCode } from "@/components/dress-code";
+import { Entry } from "@/components/entry";
+import { HowGet } from "@/components/how-get";
+import { Poster } from "@/components/poster";
+import { Programm } from "@/components/programm";
+import { Resto } from "@/components/resto";
 
 export default function Home() {
-  const [password, setPassword] = useState('')
-  const [state, setState] = useState(false)
-
-  useEffect(() => {
-    const auth = localStorage.getItem('auth')
-    if(auth) {
-      setState(true)
-    }
-    if(password === '250125'){
-      setState(true)
-      localStorage.setItem('auth', 'true')
-    }
-  },[password])
 
   return (
     <>
@@ -29,12 +23,16 @@ export default function Home() {
       </Head>
       <div>
         <Main>
-          {state ? (
-          <List>
-            {guests_list.map(e => (
-              <p key={e.id}>{e.inner_name} - <a href={`https://wedding-sasha-alina.netlify.app/${e.slug}`}>{`https://wedding-sasha-alina.netlify.app/${e.slug}`}</a></p>
-            ))}
-          </List>) : <input value={password} onChange={(e) => {setPassword(e.target.value)}} type="text" placeholder="Пароль"/>}
+        <>
+            <Entry />
+            <Poster />
+            <Programm />
+            <Resto />
+            <HowGet />
+            <DressCode />
+            </>
+          <div className="curtain" />
+          <div className="curtain_b" />
         </Main>
       </div>
     </>
