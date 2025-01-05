@@ -39,36 +39,8 @@ export default function Home() {
   );
 }
 
-const List = styled.div`
-display: flex;
-flex-direction: column;
-gap: 40px;
-width: 70vw;
-font-size: 22px;
-font-family: Arial, Helvetica, sans-serif;
-padding: 60px;
-text-align: center;
-
-& a {
-  color: #c77474;
-  text-decoration: underline;
-}
-`
 
 const Main = styled.main`
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100vw;
-min-height: 100vh;
-
-& input {
-  padding: 20px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  width: 300px;
-}
-
 & .curtain_b {
         position: fixed;
         bottom: 0;
